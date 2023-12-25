@@ -23,7 +23,7 @@ part_2 = Law_of_Gravity(M_main - sum(sp_m_stage[:2]), sp_r[1])
 part_3 = Law_of_Gravity(M_main - sum(sp_m_stage[:3]), sp_r[2])
 part_4 = Law_of_Gravity(M_main - sum(sp_m_stage[:4]), sp_r[3])
 
-plt.plot(sp_r, [part_1, part_2, part_3, part_4])
+plt.plot([part_1, part_2, part_3, part_4], sp_r)
 print(part_1, part_2, part_3, part_4)
 plt.title('График зависимости силы всемирного тяготения от высоты')
 plt.ylabel('м')
